@@ -1,3 +1,6 @@
 export interface V8ProfOptions {
-  auth: any;
+  auth: {
+    name: string;
+    password: string;
+  };
 }
