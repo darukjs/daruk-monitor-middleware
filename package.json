@@ -1,0 +1,44 @@
+{
+  "name": "daruk-monitor-middleware",
+  "version": "1.0.0",
+  "description": "A nodejs use typescript project",
+  "main": "dist/index.js",
+  "types": "./typings/index.d.ts",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "dev": "NODE_ENV=dev nodemon --exec ts-node --files ./src/index.ts",
+    "test": "ts-mocha tests/**/*.test.ts"
+  },
+  "keywords": [
+    "daruk-monitor-middleware",
+    "A nodejs use typescript project"
+  ],
+  "author": {
+    "name": "myluluy",
+    "email": "myluluy@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^8.0.53",
+    "@types/supertest": "^2.0.7",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.3",
+    "supertest": "^3.3.0",
+    "ts-mocha": "^2.0.0",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-alloy": "^0.2.1",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "@types/basic-auth": "^1.1.2",
+    "basic-auth": "^2.0.1",
+    "daruk": "^0.5.5",
+    "v8-analytics": "^1.3.7",
+    "v8-profiler-node8": "^6.0.1"
+  }
+}
